@@ -2,12 +2,19 @@ import random
 
 # Dice options using list() and range()
 diceOptions = list(range(1, 7))
-weapons = ['Fist', 'Knife', 'Club', 'Gun', 'Bomb', 'Nuclear Bomb']
-print("Available Weapons:", ', '.join(weapons))
 
 # Weapons array
-combatStrength = max(1, min(6, int(input("Hero strength (1-6): "))))
-mCombatStrength = max(1, min(6, int(input("Monster strength (1-6): "))))
+weapons = ['Fist', 'Knife', 'Club', 'Gun', 'Bomb', 'Nuclear Bomb']
+
+print("Available Weapons:", ', '.join(weapons))
+
+#inputs combat strength hero
+combatStrength = int(input("Enter your combat strength (1-6): "))
+if combatStrength < 1 or combatStrength > 6:
+    print("Invalid input, Combat strenght should be between 1 to 6.")
+
+# combatStrength = max(1, min(6, int(input("Hero strength (1-6): "))))
+# mCombatStrength = max(1, min(6, int(input("Monster strength (1-6): "))))
 
 # Battle
 for j in range(1, 21, 2):
