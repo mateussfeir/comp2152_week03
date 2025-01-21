@@ -14,7 +14,7 @@ if combatStrength < 1 or combatStrength > 6:
     print("Invalid input, Combat strenght should be between 1 to 6.")
 
 # combatStrength = max(1, min(6, int(input("Hero strength (1-6): "))))
-# mCombatStrength = max(1, min(6, int(input("Monster strength (1-6): "))))
+mCombatStrength = max(1, min(6, int(input("Monster strength (1-6): "))))
 
 # Battle
 for j in range(1, 21, 2):
